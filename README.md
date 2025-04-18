@@ -32,7 +32,22 @@ iv) Custom port = 9000
 **1) SSH into the AWS EC2 Ubuntu Server**
 ```bash 
 ssh -i bastion-1.pem  ubuntu@43.217.7.7
+```
+**2) Let's rejuvenate our Ubuntu server**
+```bash 
+sudo apt update
+sudo apt upgrade -y
+```
+**3) Install OpenJDK 17**
 
+**i) Install OpenJDK 17 (needed for the latest version of SonarQube (version 10.0).**
+```bash 
+sudo apt install -y openjdk-17-jdk
+```
+**ii) Let's check the installed version of Java. VALIDATION IS IMPORTANT.**
+```bash 
+java -version
+```
 
 
 
