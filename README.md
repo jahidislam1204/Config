@@ -33,6 +33,8 @@ iv) Custom port = 9000
 ```bash 
 ssh -i jahid.pem  ubuntu@Public_ip
 ```
+jahid.pem -> generated key from AWS EC2
+Pulic_ip  -> use your own public ip
 **2) Let's rejuvenate our Ubuntu server**
 ```bash 
 sudo apt update
