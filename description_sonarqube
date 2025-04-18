@@ -1,0 +1,74 @@
+SonarQube is an open-source platform used for continuous inspection of code quality. It’s widely used by developers and DevOps teams to analyze code for bugs, vulnerabilities, code smells, and duplications. It supports a variety of programming languages (Java, JavaScript, Python, C#, etc.) and integrates well with CI/CD pipelines.
+
+🔍 What SonarQube Does:
+Static Code Analysis: Examines your code without executing it.
+
+Code Quality Metrics: Provides metrics like code coverage, complexity, duplication, maintainability.
+
+Detects Issues: Flags bugs, security vulnerabilities, and code smells.
+
+Reports & Dashboards: Gives visual insights via a dashboard for teams to track quality over time.
+
+Enforces Quality Gates: Blocks builds if the code doesn’t meet quality standards (e.g., too many bugs or poor test coverage).
+
+🧠 Why Use SonarQube?
+Catch issues early before code goes to production.
+
+Improve maintainability of your codebase.
+
+Ensure consistent coding standards across a team.
+
+Security: Detects vulnerabilities before deployment.
+
+Compliance: Helps with industry standards (like OWASP, PCI-DSS).
+
+🕒 When To Use SonarQube:
+During development (integrated with IDE like IntelliJ or VS Code via plugins).
+
+As part of your CI/CD pipeline (Jenkins, GitLab CI, GitHub Actions, etc.).
+
+During code reviews to ensure code quality before merging.
+
+For legacy projects to assess and improve codebase over time.
+
+🛠️ How To Use SonarQube:
+Set up SonarQube Server:
+
+Install locally or on a server (Docker is popular).
+
+Or use SonarCloud (hosted version by SonarSource).
+
+Install Scanner:
+
+Use SonarScanner CLI, Maven/Gradle plugins, or integrate with CI tools.
+
+Example with CLI:
+
+
+bash-script: 
+
+sonar-scanner \
+  -Dsonar.projectKey=my_project \
+  -Dsonar.sources=src \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=your_token
+Analyze Code:
+
+Run the scanner after writing code or as part of your CI pipeline.
+
+It sends results to the SonarQube dashboard.
+
+Fix Issues:
+
+Review the issues found.
+
+Prioritize bugs and vulnerabilities.
+
+Refactor based on SonarQube’s suggestions.
+
+✅ Integration Examples:
+Jenkins: Use the SonarQube plugin.
+
+GitHub Actions: Add a step for SonarScanner in your workflow.
+
+IDE: Install SonarLint to get real-time feedback in your code editor.
