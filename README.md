@@ -31,7 +31,7 @@ iv) Custom port = 9000
 
 **1) SSH into the AWS EC2 Ubuntu Server**
 ```bash 
-ssh -i bastion-1.pem  ubuntu@43.217.7.7
+ssh -i jahid.pem  ubuntu@Public_ip
 ```
 **2) Let's rejuvenate our Ubuntu server**
 ```bash 
