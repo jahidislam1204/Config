@@ -2,9 +2,8 @@
 
 
 
-Server Specification (Please choose as per your requirement):
-
-OS = Ubuntu 22.04 LTS
+🖥️ Server Specification (Choose as per your need):
+OS: Ubuntu 22.04 LTS / 20.04 LTS
 
 CPU: 2 vCPU
 
@@ -12,20 +11,19 @@ RAM: 4 GB
 
 Storage: 20 GB
 
-or 
+Recommended EC2 Instance: t2.medium or higher
+(You can use t2.micro for testing but it's not recommended for production)
 
-use -> t2 micro
+🔐 Security Group Configuration
+Ensure the following ports are allowed:
 
+HTTP: 80
 
-security group edit----->> 
+HTTPS: 443
 
-i) HTTP = 80
+SSH: 22 (Only for your IP)
 
-ii) HTTPS = 443
-
-iii) SSH = 22 (open to only required IP)
-
-iv) Custom port = 9000
+Custom TCP: 9000 (SonarQube default port)
 
 ## .......Follow the step carefully......
 
